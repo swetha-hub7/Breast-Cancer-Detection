@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>🎗 Breast Cancer Detection</h1>
+        <p>Machine Learning Prediction Dashboard</p>
+    </div>
+
+    <div class="dashboard">
+
+        <div class="form-section">
+
+            <h2>Patient Features</h2>
+
+            <div class="input-grid">
+
+                <input type="number" id="radius" placeholder="Mean Radius">
+                <input type="number" id="texture" placeholder="Mean Texture">
+
+                <input type="number" id="perimeter" placeholder="Mean Perimeter">
+                <input type="number" id="area" placeholder="Mean Area">
+
+                <input type="number" id="smoothness" placeholder="Mean Smoothness">
+                <input type="number" id="compactness" placeholder="Mean Compactness">
+
+                <input type="number" id="concavity" placeholder="Mean Concavity">
+                <input type="number" id="concave_points" placeholder="Mean Concave Points">
+
+                <input type="number" id="symmetry" placeholder="Mean Symmetry">
+                <input type="number" id="fractal" placeholder="Mean Fractal Dimension">
+
+            </div>
+
+            <button onclick="predictCancer()">
+                Predict Cancer
+            </button>
+
+        </div>
+
+        <div class="result-section">
+
+            <h2>Prediction Result</h2>
+
+            <div id="result-card">
+                <h3>Waiting for Prediction...</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
